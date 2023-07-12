@@ -1,7 +1,6 @@
 /* インポート */
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 html,
 body,
 div,
@@ -166,8 +165,7 @@ section {
   padding-top: 160px;
 }
 section h2.section-title {
-  /* font-family: "Lobster Two", cursive; */
-  font-family: 'Rampart One', cursive;
+  font-family: "Lobster Two", cursive;
   font-size: 50px;
   width: -moz-fit-content;
   width: fit-content;
