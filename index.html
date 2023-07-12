@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Profile site</title>
+
+    <!-- スタイルシートの読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- JavaScriptファイルの読み込み -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"
+    ></script>
+    <script defer src="main.js"></script>
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <div class="head-wrap">
+        <a class="top-link" href="/"><img src="images/profile.jpg" /></a>
+        <div id="menuBtn">
+          <div class="line-item"></div>
+          <div class="line-item"></div>
+          <div class="line-item"></div>
+        </div>
+      </div>
+      <!-- ナビゲーションメニュー -->
+      <nav class="nav-menu">
+        <a class="nav-link" href="#profile">Profile</a>
+        <a class="nav-link" href="#favorite">Favorite</a>
+        <a class="nav-link" href="#video">Video</a>
+      </nav>
+    </header>
+
+    <!-- Swiper（スライドショー） -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/photo1.jpg" /></div>
+        <div class="swiper-slide"><img src="images/photo2.jpg" /></div>
+        <div class="swiper-slide"><img src="images/photo3.jpg" /></div>
+      </div>
+      <h1 class="top-title">Let's enjoy Coding!</h1>
+    </div>
+
+    <!-- プロフィールセクション -->
+    <section class="profile" id="profile">
+      <h2 class="section-title">美唄市</h2>
+      <div class="container">
+        <img
+          class="profile-image"
+          src="images/profile.jpg"
+          alt="profile-photo"
+        />
+        <div class="profile-text">
+          <p>美唄の由来は、アイヌ語「ピパオイ（沼の貝の多いところ）」。石狩平野に位置し、札幌市と旭川市の中間に広がる道内有数の穀倉地帯です。
+            市内の中央には、日本一長い直線道路（29.2km）としても有名な国道12 号と道央自動車道、JR 函館本線が南北に縦貫しており、交通の要衝です。
+            東側には、2019年5月に日本遺産に認定された「炭鉄港」の構成遺産が点在し、西側には、北海道最大の一級河川石狩川が流れるとともに、田園地帯が広がり、春と秋には国の天然記念物である「マガン」6～8万羽がラムサール条約登録湿地「宮島沼」へ飛来します。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- お気に入りセクション -->
+    <section class="favorite" id="favorite">
+      <h2 class="section-title">feature</h2>
+      <div class="container">
+        <div class="item">
+          <h3 class="item-title">100年以上受け継がれる伝統</h3>
+          <img class="cover" src="images/image1.jpg" />
+          <p>
+            米と炒めた肉、モツをしょうゆ、砂糖、酒で炊き上げ、エキスの染み込んだ米つぶがあめ色につやつやと光る。他の材料や調味料をほとんど使わない分、香りも味も鶏の風味が強く、他の混ぜごはんとは違う独特な個性。
+            美唄市の石狩川沿いに位置する農村集落「中村町」では、その伝統を受け継ぎ今も農家のお母さんたちが郷土の味を守り広めようと、添加物を使わぬ昔ながらのとりめしを毎朝炊き上げています。
+          </p>
+        </div>
+        <div class="item">
+          <h3 class="item-title">ななつぼし</h3>
+          <img class="cover" src="images/image2.jpg" />
+          <p>
+            しっかりとした粒立ち、ほどよい粘りと甘みで、さっぱりとした口当たりが特徴です。 冷めても味や香りが飛びにくく、お弁当に最適です。          </p>
+        </div>
+        <div class="item">
+          <h3 class="item-title">宮島沼</h3>
+          <img class="cover" src="images/image3.jpg" />
+          <p>
+            宮島沼の春の早朝、7万羽の真雁（マガン）の旅立ち。この写真が撮りたくて、世界中からこの場所にカメラマンが集まります。
+            真雁の群れで空が黒くなるほどの壮大な景色を見られます。この景色を見るなら春・秋がおすすめです。          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 画像セクション -->
+    <section class="section-image">
+      <img src="images/winter.jpg" />
+    </section>
+    
+
+    <!-- ビデオセクション -->
+    <section class="video" id="video">
+      <h2 class="section-title">Video</h2>
+      <div class="container">
+        <div class="about">
+          <p>
+            美唄という文字には
+            「美しき唄のまち」が込められています。
+            <br>
+            真っ白に広がる雪原のまち美唄が
+            美しく流れていきます。          </p>
+        </div>
+        <!-- 動画プレイヤー -->
+        <iframe src="https://www.youtube.com/embed/DjHsfXa_h7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section> 
+
+    <!-- フッター -->
+    <footer>&copy; 2023 Itnav</footer>
+  </body>
+</html>
